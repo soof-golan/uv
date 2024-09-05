@@ -407,6 +407,7 @@ pub(crate) async fn pip_install(
         link_mode,
         compile,
         &index_locations,
+        config_settings,
         &hasher,
         &markers,
         &tags,

@@ -1772,6 +1772,7 @@ dependencies = [
  "csv",
  "data-encoding",
  "distribution-filename",
+ "distribution-types",
  "fs-err",
  "indoc",
  "mailparse",
@@ -2797,6 +2798,7 @@ name = "pypi-types"
 version = "0.0.1"
 dependencies = [
  "anyhow",
+ "cache-key",
  "distribution-filename",
  "indexmap",
  "itertools 0.13.0",
@@ -2807,6 +2809,7 @@ dependencies = [
  "regex",
  "rkyv",
  "serde",
+ "serde_json",
  "thiserror",
  "toml",
  "tracing",
@@ -4691,6 +4694,7 @@ name = "uv-configuration"
 version = "0.0.1"
 dependencies = [
  "anyhow",
+ "cache-key",
  "clap",
  "distribution-types",
  "either",
@@ -4779,6 +4783,7 @@ name = "uv-distribution"
 version = "0.0.1"
 dependencies = [
  "anyhow",
+ "cache-key",
  "distribution-filename",
  "distribution-types",
  "fs-err",
@@ -4964,6 +4969,7 @@ dependencies = [
  "clap",
  "configparser",
  "distribution-filename",
+ "distribution-types",
  "fs-err",
  "futures",
  "goblin",
