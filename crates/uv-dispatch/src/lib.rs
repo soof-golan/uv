@@ -214,7 +214,6 @@ impl<'a> BuildContext for BuildDispatch<'a> {
             &BuildOptions::default(),
             self.hasher,
             self.index_locations,
-            self.config_settings,
             self.cache(),
             venv,
             &markers,

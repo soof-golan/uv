@@ -304,7 +304,6 @@ pub(super) async fn do_sync(
         link_mode,
         compile_bytecode,
         index_locations,
-        config_setting,
         &hasher,
         &markers,
         tags,
