@@ -2427,6 +2427,13 @@ pub struct RunArgs {
     #[arg(long)]
     pub isolated: bool,
 
+    /// Avoid syncing the virtual environment.
+    ///
+    /// Implies `--frozen`, as the project dependencies will be ignored (i.e., the lockfile will not
+    /// be updated, since the environment will not be synced regardless).
+    #[arg(long, conflicts_with = "frozen")]
+    pub no_sync: bool,
+
     /// Assert that the `uv.lock` will remain unchanged.
     ///
     /// Requires that the lockfile is up-to-date. If the lockfile is missing or
@@ -2728,7 +2735,7 @@ pub struct AddArgs {
     #[arg(long)]
     pub extra: Option<Vec<ExtraName>>,
 
-    /// Avoid syncing the virtual environment after re-locking the project.
+    /// Avoid syncing the virtual environment.
     #[arg(long, conflicts_with = "frozen")]
     pub no_sync: bool,
 
